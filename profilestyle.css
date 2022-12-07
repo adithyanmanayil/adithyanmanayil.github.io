@@ -160,3 +160,54 @@ span{
 	background: #e73c37;
 	border-radius: 10px;
 }
+
+.work{
+	color: #e73c37;
+}
+
+.contact{
+	width: 100%;
+	height: 100vh;
+	background: #312C38;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form{
+	background: #bfb0a0;
+	display: flex;
+	flex-direction: column;
+	padding: 2vw 4vw;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+}
+
+form h3{
+	color: #312C38;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+form input, form textarea{
+	border: 0;
+	margin: 10px 0;
+	padding: 20px;
+	outline: none;
+	background: #F3F0F0;font-size: 16px;
+	color: #312C38;
+}
+
+form button{
+	padding: 15px;
+	background: #312C38;
+	color: #bfb0a0;
+	font-size: 18px;
+	border: 0px;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin: 20px auto 0;
+	border-radius: 30px;
+}

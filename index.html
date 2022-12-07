@@ -6,6 +6,7 @@
 		
 		<title>Adithyan Manayil</title>
 		<link rel="stylesheet" href="profilestyle.css">
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</head>
 	
 	<body>
@@ -107,6 +108,35 @@
 				</div>
 			</div>
 		</div>
+		<br>
+		<div class="work" id="work">
+			<h3><center>UNDER MAINTAINANCE</center></h3>
+		</div>
+		<br>
+		<div class="contact" id="contact">
+			<form onSubmit="sendEmail(); reset(); return false;">
+				<h3>GET IN TOUCH</h3>
+				<input type="text" id="name" placeholder="Your Name" required>
+				<input type="text" id="email" placeholder="Email id" required>
+				<input type="text" id="phone" placeholder="Phone no." required>
+				<textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	<script>
+		function sendEmail(){
+			var f=document.getElementById("email").value;
+			Email.send({
+				Host : "smtp.gmail.com",
+				Username : "manayiladithyan@gmail.com",
+				Password : "curly4Ch6isty",
+				To : 'manayiladithyan@gmail.com',
+				From : f,
+				Subject : "New Content form Enquiry",
+				Body : "And this is the body"
+			}).then(message => alert(message));
+		}	
+	</script>
 	</body>
 	
 </html>
