@@ -60,6 +60,7 @@ span{
 .detail p{
 	color: #312C38;
 	line-height: 22px;
+        font-size: 10px;
 }
 
 .detail a{
@@ -72,10 +73,6 @@ span{
 	margin: 30px 0;
 	border-radius: 10px;
 	box-shadow: 0px 0px 5px black;
-}
-
-#p2{
-	font-size: 5px;
 }
 
 .detail a:hover{
