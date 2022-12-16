@@ -11,13 +11,13 @@
 	
 	<body>
 		<div class="main">
-			<nav>
+			<nav id="nav">
 				<span></span>
 				<ul>
-					<li><a href="#home">HOME</a></li>
+					<li><a href="#nav">HOME</a></li>
 					<li><a href="#about">ABOUT</a></li>
 					<li><a href="#work">WORK</a></li>
-					<li><a href="#contact">CONTACT</a></li>
+					<li><a href="#social">CONTACT</a></li>
 				</ul>
 			</nav>
 			<div class="detail" id="home">
@@ -28,6 +28,7 @@
 			
 				<a href="adithyanmanayilcv.pdf" onClick="down();" download="cv_adithyan">DOWNLOAD CV</a>
 			</div>
+			
 			<div class="images"> </div>
 		</div>
 		<div class="about" id="about">
@@ -116,21 +117,31 @@
 			<a href="https://sgpapoly.000webhostapp.com/" id="sgpa">SGPA CALCULATOR</a></center>
 		</div>
 		<br>
-		<div class="contact" id="contact">
-			<form onSubmit="sendEmail(); reset(); return false;">
-				<h3>GET IN TOUCH</h3>
-				<input type="text" id="name" placeholder="Your Name" required>
-				<input type="text" id="email" placeholder="Email id" required>
-				<input type="text" id="phone" placeholder="Phone no." required>
-				<textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
-				<button type="submit">Submit</button>
-			</form>
+		<br>
+		<div class="social" id="social">
+			<center>
+				<a href="https://instagram.com/adithyan_manayil?igshid=YmMyMTA2M2Y=">
+					<img src="icons/instagramlogo-01.png" alt="Instagram" width="3%" href="instagram/adithyanman"></a>
+				<a href="https://www.behance.net/adithyanmanayil">
+					<img src="icons/behancelogo-01.png" alt="Behance" width="3%"></a>
+				<a href="mailto:manayiladithyan@gmail.com">
+					<img src="icons/maillogo-01.png" alt="Mail" width="3%"></a>
+				<a href="https://twitter.com/ad1_67">
+					<img src="icons/twitterlogo-01.png" alt="Twitter" width="3%"></a>
+			</center>
 		</div>
-	<script>
-		function sendEmail(){
-			alert("Done");
-		}	
-	</script>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<center>
+			<a href="#nav" id="group">Go UP!</a>
+		</center>
+		<br><br><br><br>
 	</body>
 	
 </html>
