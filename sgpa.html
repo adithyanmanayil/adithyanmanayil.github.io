@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<title>cgpa calculator</title>
+	</head>
+	<link rel="stylesheet" href="sgpastyle.css">
+	<script src="sgpa.js"></script>
+	
+<body>
+		
+		<div id="title">
+			<h1>
+				SGPA CALCULATOR
+			</h1>
+			<h2 id="poly">
+				DIPLOMA REVISION 2015
+			</h2>
+		</div>
+	
+		<div id="form">
+			<form name="getdata" id="getdata">
+				<b>
+					<label>TRADE</label>
+					<br>
+					<br>
+					<select name="trades" id="trades" class="ddbox">
+						<option value="ct">Computer Engineering</option>
+						<option value="ec">Electronics &amp; Communications</option>
+						<option value="td">Tool &amp; Die</option>
+					</select>
+					<br>
+					<br>
+
+					<label>SEMESTER</label>
+					<br>
+					<br>
+					<select name="sem" id="sem" class="ddbox">
+						<option value="s1">Sem 1</option>
+						<option value="s2">Sem 2</option>
+						<option value="s3">Sem 3</option>
+						<option value="s4">Sem 4</option>
+						<option value="s5">Sem 5</option>
+						<option value="s6">Sem 6</option>
+
+					</select>
+					<br>
+					<br>
+					
+					<input type="button" name="apply" id="apply" value="Apply" onClick="credits();">
+				</b>
+			</form>
+			
+			<form name="mark" id="mark" class="ff">
+				<b>
+					<input type="text" name="sub1name" id="sub1name" class="subjects" value="SUBJECT  1" disabled>
+					<input type="text" name="sub1credit" id="sub1credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub1mark" id="sub1mark" class="sub_marks" value="0" onFocus="this.value=''">
+					<br>
+					<br>
+					<input type="text" name="sub2name" id="sub2name" class="subjects" value="SUBJECT  2" disabled>
+					<input type="text" name="sub2credit" id="sub2credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub2mark" id="sub2mark" class="sub_marks" value="0" onFocus="this.value=''">
+					<br>
+					<br>
+					<input type="text" name="sub3name" id="sub3name" class="subjects" value="SUBJECT  3" disabled>
+					<input type="text" name="sub3credit" id="sub3credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub3mark" id="sub3mark" class="sub_marks" value="0" onFocus="this.value=''">
+					<br>
+					<br>
+					<input type="text" name="sub4name" id="sub4name" class="subjects" value="SUBJECT  4" disabled>
+					<input type="text" name="sub4credit" id="sub4credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub4mark" id="sub4mark" class="sub_marks" value="0" onFocus="this.value=''">
+					<br>
+					<br>
+					<input type="text" name="sub5name" id="sub5name" class="subjects" value="SUBJECT  5" disabled>
+					<input type="text" name="sub5credit" id="sub5credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub5mark" id="sub5mark" class="sub_marks" value="0" onFocus="this.value=''">
+					<br>
+					<br>
+					<input type="text" name="sub6name" id="sub6name" class="subjects" value="SUBJECT  6" disabled>
+					<input type="text" name="sub6credit" id="sub6credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub6mark" id="sub6mark" class="sub_marks" value="0" onFocus="this.value=''">
+					<br>
+					<br>
+					<input type="text" name="sub7name" id="sub7name" class="subjects" value="SUBJECT  7" disabled>
+					<input type="text" name="sub7credit" id="sub7credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub7mark" id="sub7mark" class="sub_marks" value="0" onFocus="this.value=''">
+					<br>
+					<br>
+					<input type="text" name="sub8name" id="sub8name" class="subjects" value="SUBJECT 8" disabled>
+					<input type="text" name="sub8credit" id="sub8credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub8mark" id="sub8mark" class="sub_marks" value="0" onFocus="this.value=''">
+					<br>
+					<br>
+					<input type="text" name="sub9name" id="sub9name" class="subjects" value="SUBJECT 9" disabled>
+					<input type="text" name="sub9credit" id="sub9credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub9mark" id="sub9mark" class="sub_marks" value="0" onFocus="this.value=''" disabled>
+					<br>
+					<br>
+					<input type="text" name="sub10name" id="sub10name" class="subjects" value="SUBJECT 10" disabled>
+					<input type="text" name="sub10credit" id="sub10credit" class="sub_credits" value="0" disabled>
+					<input type="number" name="sub10mark" id="sub10mark" class="sub_marks" value="0" onFocus="this.value=''" disabled>
+				</b>
+			</form>
+		</div>
+	
+		<div name="submition" id="submition">
+			<center>
+			<input type="button" value="CALCULATE" name="calc" id="calc" onClick="calc();">
+			<input type="text" name="cgpa" id="cgpa" disabled>
+			</center>
+		</div>
+	
+	</body>
+	
+</html>

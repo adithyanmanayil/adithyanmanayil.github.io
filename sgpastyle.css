@@ -1,0 +1,105 @@
+*{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+		
+body{
+	background-color: #1C2A44;
+}
+		
+#title{
+	letter-spacing: 5px;
+	color: #CFD7E4;
+	text-align: center;
+}
+		
+#poly{
+	font-size: 11px;
+}
+		
+#form{
+	text-align: center;
+	margin-top: 30px;
+	border-color: #099FFF;
+	border-radius: 30px;
+	padding: 25px;
+}
+#getdata{
+	color: #CFD7E4;
+	font-size: 13px;
+	letter-spacing: 4px;
+	text-align: center;
+}
+.ddbox{
+	background-color: #099FFF;
+	border-width: 0px;
+	border-radius: 30px;
+	padding: 3px;
+	width: 200px;
+}
+		
+#apply{
+	background-color: #099FFF;
+	border-width: 1px;
+	border-radius: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#apply:hover{
+	background-color: aqua;
+	color: #1C2A44;
+}
+		
+#mark{
+	margin-top:40px;
+}
+		
+.subjects{
+	background-color: #1C2A44;
+	border-width: 0px;
+	color: #CFD7E4;
+}
+		
+.sub_credits{
+	width: 50px;
+	border-radius: 30px;
+	padding-left: 10px;
+	border-width: 0px;
+	background-color: #1C2A44;
+	color: #CFD7E4;
+}
+.sub_marks{
+	width: 50px;
+	border-radius: 30px;
+	padding-left: 10px;
+	border-width: 0px;
+}
+		
+#calc{
+	background-color: #099FFF;
+	border-width: 1px;
+	border-radius: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#calc:hover{
+	background-color: aqua;
+	color: #1C2A44;
+}
+		
+#cgpa{
+	border-radius: 30px;
+	width: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-width: 0px;
+	margin-left: 45px;
+	color: #CFD7E4;
+	background-color: #1C2A44;
+	box-shadow: 0px 0px 10px 0px #00FFFF, 0px 6px 20px 0px rgba(0, 0, 0, 19);
+}		
