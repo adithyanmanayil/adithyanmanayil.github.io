@@ -127,6 +127,10 @@ div{/*
 	[class*="col-"] {
   		width: 100%;
 	}
+	.intro{
+		display: flex;
+		align-items: center;
+	}
 	/*menu*/
 	.menu{
 		display: none;
