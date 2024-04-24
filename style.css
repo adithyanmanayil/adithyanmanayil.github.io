@@ -113,10 +113,11 @@ div{/*
 .cp4{background-color: #D4ADFC;}
 
 
-/*Works
+/*Works*/
 
 .works{
 	background-color: #18122B;
+	border-radius: 10px;
 }
 .wrapper{
 	padding: 2%;
@@ -141,7 +142,7 @@ div{/*
 .wrapper .col-3 .col-12 img{
 	object-fit: cover;
 }
-*/
+
 
 
 /*About*/
@@ -178,6 +179,13 @@ div{/*
   		width: 100%;
 	}
 	/*menu*/
+	.works{
+		padding: 2%;
+	}
+	.wrapper .col-3{
+		margin: 1% auto;
+		padding: 2%;
+	}
 	.menu{
 		display: none;
 	}
@@ -233,5 +241,10 @@ div{/*
 
 	.intro-text{
 		padding-top: 0;
+	}
+
+	/*about*/
+	.about .col-2{
+		margin: 1% auto;
 	}
 }
