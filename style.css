@@ -39,6 +39,15 @@ div{/*
 }
 
 /*menu*/
+.menu{
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.screen{
+	height: 100px;
+}
 .ham, .menu-s{
 	display: none;
 }
@@ -118,6 +127,11 @@ div{/*
 .works{
 	background-color: #18122B;
 	border-radius: 10px;
+	height: 1000px;
+	overflow-x: scroll;
+}
+.works::-webkit-scrollbar {
+  display: none;
 }
 .wrapper{
 	padding: 2%;
@@ -126,12 +140,10 @@ div{/*
 .wrapper .col-3{
 	background-color: #443C68;
 	margin: 3.94%;
-	max-height: 400px;
 	border-radius: 10px;
 	padding: 2%;
 }
 .wrapper .col-3 .col-12{
-	max-height: 300px;
 	background-color: red;
 	border-radius: 10px 10px 0 0;
 	display: flex;
@@ -161,7 +173,9 @@ div{/*
 .about .col-2:hover{
 	background-color: #443C68;;
 }
-
+.about h3{
+	letter-spacing: 1px;
+}
 
 
 /*Media Query*/
@@ -180,11 +194,11 @@ div{/*
 	}
 	/*menu*/
 	.works{
-		padding: 2%;
+		padding: 4%;
 	}
 	.wrapper .col-3{
 		margin: 1% auto;
-		padding: 2%;
+		padding: 4%;
 	}
 	.menu{
 		display: none;
@@ -245,6 +259,7 @@ div{/*
 
 	/*about*/
 	.about .col-2{
-		margin: 1% auto;
+		margin: 2% 5%;
+		width: 40%;
 	}
 }
