@@ -13,25 +13,48 @@
 
 		<!-- main script-->
 		<script src="script.js"></script>
+
+		<!-- jQuery Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			//smooth Scrolling
+			$(document).ready(function(){
+			  	$("a").on('click', function(event) {
+			    	if (this.hash !== "") {
+			      	event.preventDefault();
+			     	var hash = this.hash;
+					$('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      	}, 800, function(){
+			        	window.location.hash = hash;
+			      	});
+			    }
+			  });
+			});
+		</script>
+
 	</head>
 	<body>
 		<!--Main Menu-->
 		<header class="row menu">
-			<div class="col-7 col-s-7" style="color: #352F44;">I <del style="text-decoration: line-through; color: #352F44">don't</del> didn't know how to give width to blank div. So this happens :)</div>
+			<div class="col-7 col-s-7" style="color: transparent;">I <del style="text-decoration: line-through; color: transparent;">don't</del> didn't know how to give width to blank div. So this happens :)</div>
 			<a href="#home"><div class="col-1 col-s-1">HOME</div></a>
 			<a href="#works"><div class="col-1 col-s-1">WORKS</div></a>
 			<a href="#about"><div class="col-1 col-s-1">ABOUT</div></a>
 		</header>
 		<div class="ham" onclick="hamAnimation(this)">
-			<!--<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>-->		
+			<!--<div class="ham-icon" id="ham-icon">
+				<div class="bar1" id="b1"></div>
+				<div class="bar2" id="b2"></div>
+				<div class="bar3" id="b3"></div>
+			</div>-->
 			<div class="row menu-s" id="menu-s">
 				<a href="#home"><div class="col-1">HOME</div></a>
 				<a href="#works"><div class="col-1" style="margin: 8% 0;">WORKS</div></a>
 				<a href="#about"><div class="col-1">ABOUT</div></a>
 			</div>
 		</div>
+		<div class="row screen"></div>
 		<!--Introduction-->
 		<div class="row intro" id="home">
 			<div class="col-6 col-s-6 pic-s">
@@ -75,8 +98,6 @@
 					</div>
 					Adobe Illustrator
 				</div>
-			</div>
-			<div class="wrapper row">
 				<div class="col-3">
 					<div class="col-12">
 						<img src="noombora.jpeg" width=100%>
@@ -99,12 +120,18 @@
 		</div>
 
 		<!--About-->
+		<div class="row screen"></div>
 		<div class="row about" id="about">
+			<div class="col-12 abt-details">
+				<h3>Contact Me Through<h3>
+			</div>
 			<a href="https://www.linkedin.com/in/adithyan-manayil-0015a4251?originalSubdomain=in"><div class="col-2">LINKED IN</div></a>
 			<a href="https://www.fiverr.com/adithyanmanayil"><div class="col-2">FIVERR</div></a>
+			<a href="https://github.com/adithyanmanayil"><div class="col-2">GITHUB</div></a>
 			<a href="https://twitter.com/ad1_67"><div class="col-2">TWITTER</div></a>
-			<a href="mailto:manayiladithyan@gmail.com"><div class="col-2">G MAIL</div></a>
 			<a href="https://www.upwork.com/freelancers/~0165f76666299de7f5"><div class="col-2">UP WORK</div></a>
+			<a href="mailto:manayiladithyan@gmail.com"><div class="col-2">G MAIL</div></a>
+			<a href="https://www.instagram.com/adithyan_manayil/"><div class="col-2">INSTAGRAM</div></a>
 		</div>
 
 	</body>
