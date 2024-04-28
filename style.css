@@ -73,6 +73,7 @@ div{/*
 /*Introduction*/
 .intro{
 	display: flex;
+	flex-direction: row;
 }
 .intro-text{
 	text-align: left;
