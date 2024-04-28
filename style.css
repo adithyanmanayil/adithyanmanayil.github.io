@@ -71,6 +71,9 @@ div{/*
 }
 
 /*Introduction*/
+.intro{
+	display: flex;
+}
 .intro-text{
 	text-align: left;
 	padding: 10%;
@@ -139,7 +142,6 @@ div{/*
 .wrapper{
 	padding: 2%;
 }
-
 .wrapper .col-3{
 	background-color: #443C68;
 	margin: 3.94%;
@@ -249,6 +251,9 @@ div{/*
 	.change .bar3 {display: none;}
 
 	/*intro*/
+	.intro{
+		display: block;
+	}
 	.pic-s{
 		display: block;
 	}
