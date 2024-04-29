@@ -140,6 +140,9 @@ div{/*
 .works::-webkit-scrollbar {
   display: none;
 }
+#works::-webkit-scrollbar {
+  display: none;
+}
 .wrapper{
 	padding: 2%;
 }
