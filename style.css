@@ -1,277 +1,176 @@
-*{
-	text-decoration: none;
-	box-sizing: border-box;
-	color: #D4ADFC;
-	font-family: 'Poppins', sans-serif;
-	transition: all 0.8s ease;
-}
-body{
-	background-color: #352F44;
-}
-div{/*
-	border-style: solid;
-	border-color: #ffffff;*/
-}
+<!Doctype html>
+<html>
+	<head>
+		<title>Adithyan Manayil</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<!--Google Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-/*12 grid*/
-.container-fluid{width:100%; max-width: 2560px;}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+		<!-- main sytle sheet-->
+		<link rel="stylesheet" href="style.css">
 
-[class*="col-"] {
-  float: left;
-}
+		<!-- main script-->
+		<script src="script.js"></script>
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+		<!-- jQuery Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			//smooth Scrolling
+			$(document).ready(function(){
+			  	$("a").on('click', function(event) {
+			    	if (this.hash !== "") {
+			      	event.preventDefault();
+			     	var hash = this.hash;
+					$('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      	}, 800, function(){
+			        	window.location.hash = hash;
+			      	});
+			    }
+			  });
+			});
+		</script>
 
-/*menu*/
-.menu{
-	top: 0;
-	left: 0;
-	padding: 1%;
-	background-image: linear-gradient(to bottom, rgba(53, 47, 68, 1), rgba(53, 47, 68, 0.3), rgba(53, 47, 68, 0));
-	z-index: 100;
-	position: fixed;
-	width: 100%;
-}
-.screen{
-	height: 100px;
-}
-.ham, .menu-s{
-	display: none;
-}
-.menu div{
-	text-align: center;
-	font-weight: 600;
-	letter-spacing: 1px;
-}
-.menu a div{
-	border-radius: 5px;
-	padding: 0.5% 0;
-	margin: 1.5% 1.5% 0 0;
-	transition: all 0.8s ease;
-}
-.menu a div:hover{
-	transform: scale(1.05);
-	background-color: #443C68;
-}
+	</head>
+	<body>
+		<!--Main Menu-->
+		<header class="row menu">
+			<div class="col-7 col-s-7" style="color: transparent;">I <del style="text-decoration: line-through; color: transparent;">don't</del> didn't know how to give width to blank div. So this happens :)</div>
+			<a href="#home"><div class="col-1 col-s-1">HOME</div></a>
+			<a href="#works"><div class="col-1 col-s-1">WORKS</div></a>
+			<a href="#contact"><div class="col-1 col-s-1">CONTACT</div></a>
+		</header>
+		<div class="ham" onclick="hamAnimation(this)">
+			<!--<div class="ham-icon" id="ham-icon">
+				<div class="bar1" id="b1"></div>
+				<div class="bar2" id="b2"></div>
+				<div class="bar3" id="b3"></div>
+			</div>-->
+			<div class="row menu-s" id="menu-s">
+				<a href="#home"><div class="col-1">HOME</div></a>
+				<a href="#works"><div class="col-1" style="margin: 8% 0;">WORKS</div></a>
+				<a href="#contact"><div class="col-1">CONTACT</div></a>
+			</div>
+		</div>
+		<div class="row screen"></div>
+		<!--Introduction-->
+		<div class="row intro" id="home">
+			<div class="col-6 col-s-6 pic-s">
+				<img src="file.png" width= 80%>
+			</div>
+			<div class="col-6 col-s-6 intro-text">
+				<h3>Hello I'm</h3>
+				<h1>Adithyan Manayil</h1>
+				<h2>MULTIMEDIA ARTIST & SOFTWARE ENGINEER</h2>
+				<br>
+				<div class="row color-palette">
+					<div class="col-3 col-s-3 cp1">#635985</div>
+					<div class="col-3 col-s-3 cp2">#443C68</div>
+					<div class="col-3 col-s-3 cp3">#18122B</div>
+					<div class="col-3 col-s-3 cp4">#D4ADFC</div>
+				</div>
+			</div>
+			<div class="col-6 col-s-6 pic">
+				<img src="file.png" width= 80%>
+			</div>
+		</div>
 
-/*Introduction*/
-.intro{
-	display: flex;
-	flex-direction: row;
-}
-.intro-text{
-	text-align: left;
-	padding: 10%;
-}
-.intro-text h1, .intro-text h3, .intro-text h2{
-	margin: 0;
-	padding: 0;
-}
-.intro-text h3{
-	font-style: italic;
-	font-weight: 400;
-}
-.intro-text h1{
-	font-size: 60px;
-	font-weight: 500;
-}
-.intro-text h2{
-	font-size: 25px;
-	letter-spacing: 0px;
-	font-weight: 420;
-}
-.intro-text h2:hover{
-	cursor: pointer;
-	transform: translateX(50px);
-}
+		<!--Works-->
+		<div class="col-12" id="works" style="height: auto; border-radius: 10px 10px 0 0; padding: 1%;">
+			<h2 style="text-align: center; letter-spacing: 2px;">WORKS</h2>
+			<hr style="border-color: #D4ADFC;"></div>
+		<div class="row works">
+			<div class="wrapper row">
+				<div class="row wraprow">
+					<div class="col-3">
+						<div class="col-12">
+							<img src="pepsican.jpg" width="100%">
+						</div>
+						Adobe Photoshop
+					</div>
+					<div class="col-3">
+						<div class="col-12">
+							<img src="icecreamwrapper.jpg" width=100%>
+						</div>
+						Adobe Photoshop
+					</div>
+					<div class="col-3">
+						<div class="col-12">
+							<img src="icecreamjar.png" width="100%">
+						</div>
+						Adobe Photoshop
+					</div>
+				</div>
+				<div class="row wraprow">
+					<div class="col-3">
+						<div class="col-12">
+							<img src="brochure.jpeg" width=100%>
+						</div>
+						Adobe Illustrator
+					</div>
+					<div class="col-3">
+						<div class="col-12">
+							<img src="skillfest.jpeg" width=100%>
+						</div>
+						Adobe Photoshop
+					</div>
+					<div class="col-3">
+						<div class="col-12">
+							<img src="noombora.jpeg" width=100%>
+						</div>
+						Adobe Illustrator
+					</div>
+				</div>
+				<div class="row wraprow">
+					<div class="col-3">
+						<div class="col-12">
+							<img src="nightscn.jpeg" width=100%>
+						</div>
+						Adobe Photoshop
+					</div>
+					<div class="col-3">
+						<div class="col-12">
+							<img src="interiorsofa.jpeg" width=100%>
+						</div>
+						Autodesk 3Ds Max
+					</div>
+					<div class="col-3">
+						<div class="col-12">
+							<img src="senet.jpeg" width=100%>
+						</div>
+						Adobe Illustrator
+					</div>
+				</div>
+				<div class="row wrapper">
+					<div class="col-3">
+						<div class="col-12">
+							<img src="bakery.png" width=100%>
+						</div>
+						Blender
+					</div>
+				</div>
+			</div>
+		</div>
 
-.pic-s{
-	display: none;
-}
-.pic img, .pic-s img{
-	z-index: -1;
-	background: transparent;
-	transition: all 0.8s ease;
-}
-.pic img:hover{
-	transform: scale(1.05);
-}
+		<!--About-->
+		<div class="row screen"></div>
+		<div class="row about" id="contact">
+			<div class="col-12 abt-details">
+				<h3>Contact Me Through</h3>
+				<hr style="border-color: #D4ADFC;">
+			</div>
+			<a href="https://www.linkedin.com/in/adithyan-manayil-0015a4251?originalSubdomain=in"><div class="col-2">LINKED IN</div></a>
+			<a href="https://www.fiverr.com/adithyanmanayil"><div class="col-2">FIVERR</div></a>
+			<a href="https://github.com/adithyanmanayil"><div class="col-2">GITHUB</div></a>
+			<a href="https://twitter.com/ad1_67"><div class="col-2">TWITTER</div></a>
+			<a href="https://www.upwork.com/freelancers/~0165f76666299de7f5"><div class="col-2">UP WORK</div></a>
+			<a href="mailto:manayiladithyan@gmail.com"><div class="col-2">G MAIL</div></a>
+			<a href="https://www.instagram.com/adithyan_manayil/"><div class="col-2">INSTAGRAM</div></a>
+			<a href="https://www.behance.net/adithyanmanayil"><div class="col-2">BEHANCE</div></a>
+		</div>
 
-.color-palette .col-3{
-	color: #f0f0f0;
-	padding: 1%;
-	text-align: center;
-	font-weight: 200;
-	font-size: 15px;
-}
-.color-palette .col-3:hover{
-	cursor: pointer;
-}
-.cp1{background-color: #635985;}
-.cp2{background-color: #443C68;}
-.cp3{background-color: #18122B;}
-.cp4{background-color: #D4ADFC;}
+	</body>
 
-
-/*Works*/
-
-.works{
-	background-color: #18122B;
-	border-radius: 10px;
-	height: 1000px;
-	overflow-x: scroll;
-}
-.works::-webkit-scrollbar {
-  display: none;
-}
-.wrapper{
-	padding: 2%;
-}
-.wrapper .col-3{
-	background-color: #443C68;
-	margin: 3.94%;
-	border-radius: 10px;
-	padding: 1%;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-.wrapper .col-3 .col-12{
-	background-color: #635985;
-	border-radius: 10px;
-	display: flex;
-	align-items: flex-end;
-	color: #443C68;
-	overflow: hidden;
-	margin: auto auto 5% auto;
-}
-.wrapper .col-3 .col-12 img{
-	object-fit: cover;
-}
-
-
-
-/*About*/
-
-.about{
-	padding: 2%;
-	text-align: center;
-}
-.about .col-2{
-	padding: 1%;
-	font-weight: 500;
-	margin: 1.666%;
-	background-color: #635985;
-	border-radius: 5px;
-}
-.about .col-2:hover{
-	background-color: #443C68;
-}
-.about h3{
-	letter-spacing: 1px;
-}
-
-
-/*Media Query*/
-@media (min-width: 1024px){
-	/*menu*/
-	/*intro*/
-	.intro{
-		display: flex;
-		align-items: center;
-	}
-
-}
-@media (max-width: 768px){
-	[class*="col-"] {
-  		width: 100%;
-	}
-	/*menu*/
-	.works{
-		padding: 4%;
-	}
-	.wrapper .col-3{
-		margin: 1% auto;
-		padding: 4%;
-	}
-	.menu{
-		display: none;
-	}
-	.menu-s .col-1{
-		background-color: #18122B;
-		float: right;
-		text-align: center;
-		width: 100%;
-		border-radius: 5px;
-		padding: 8%;
-		font-weight: 500;
-		letter-spacing: 1px;
-	}
-	.menu-s .col-1:hover{
-		background-color: #443C68;
-	}
-
-	.ham{
-	  display: block;
-	  cursor: pointer;
-	  background-color: #635985;
-	  padding: 3%;
-	  border-radius: 5px;
-	  margin: 2% 3.5%;
-	  position: fixed;
-	  right: 0;
-	}
-	.bar1, .bar2, .bar3{
-	  	width: 35px;
-	  	height: 5px;
-	  	background-color: #18122B;
-	  	border-radius: 2px;
-	  	margin: 6px 0;
-	  	transition:all 0s ease;
-	}
-	/*.change .bar1 {transform: translate(0, 11px) rotate(-45deg);}
-	.change .bar2 {opacity: 0;}
-	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}*/
-	.change .bar1 {display: none;}
-	.change .bar2 {display: none;}
-	.change .bar3 {display: none;}
-
-	/*intro*/
-	.intro{
-		display: block;
-	}
-	.pic-s{
-		display: block;
-	}
-	.pic{
-		display: none;
-	}
-	.pic-s img{
-		width: 100%;
-	}
-
-	.intro-text{
-		padding-top: 0;
-	}
-
-	/*about*/
-	.about .col-2{
-		margin: 2% 5%;
-		width: 40%;
-	}
-}
+</html>
