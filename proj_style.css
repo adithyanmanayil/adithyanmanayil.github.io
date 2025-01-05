@@ -40,3 +40,9 @@ a{
 a:hover{
 	color: lightblue;
 }
+
+@media(max-width: 768px){
+	div{
+		width: 100%;
+	}
+}
